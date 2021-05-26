@@ -1,0 +1,84 @@
+#mainGrid {
+    -fx-background-image: url("/dashboard_background.jpg");
+}
+
+#secondaryGrid {
+    -fx-pref-width: 400px;
+    -fx-pref-height: 500px;
+    -fx-background-color: linear-gradient(to bottom right, rgb(0, 128, 128), rgb(0, 180, 180));
+}
+
+#thirdGrid {
+    -fx-pref-width: 400px;
+    -fx-pref-height: 320px;
+    -fx-background-color: white;
+}
+
+.label {
+    -fx-pref-width: 400px;
+    -fx-pref-height: 45px;
+    -fx-alignment: CENTER;
+    -fx-padding: 0px 0px -5px 0px;
+    -fx-text-fill: white;
+}
+
+#clientDetails {
+    -fx-font-size: 30;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180));
+}
+
+#title {
+    -fx-font-size: 24;
+    -fx-font-weight: BOLD;
+}
+
+#price {
+    -fx-font-size: 21;
+    -fx-font-weight: BOLD;
+}
+
+#description { -fx-font-size: 16; }
+
+.text-field {
+    -fx-pref-width: 340px;
+    -fx-pref-height: 35px;
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: rgb(140, 160, 175);
+    -fx-padding: 0px 0px 0px 5px;
+    -fx-font-size: 16;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: rgb(140, 160, 175);
+}
+
+.button {
+    -fx-pref-width: 165px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+    -fx-font-weight: BOLD;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+#back {
+    -fx-background-color: rgb(46, 46, 46);
+    -fx-border-color: rgb(46, 46, 46);
+}
+#back:hover {
+    -fx-background-color: black;
+    -fx-border-color: black;
+}
+
+#confirm {
+    -fx-background-color: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180));
+    -fx-border-color: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180));
+}
+
+#confirm:hover {
+    -fx-background-color: white;
+    -fx-border-color: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180));
+    -fx-text-fill: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180));
+}

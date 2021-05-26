@@ -1,0 +1,154 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<GridPane id="mainGrid" fx:controller="sample.ControllerSubscription" stylesheets="@styleSubscription.css"
+          xmlns:fx="http://javafx.com/fxml" vgap="15" hgap="40">
+    <padding>
+        <Insets top="30" left="50"/>
+    </padding>
+    <GridPane fx:id="standardGymPlan" id="Plan" hgap="10" vgap="10"
+              GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <Label fx:id="standardGymPlanTitle" id="planTitle" text="Standard Gym Plan"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="standardGymPlanPrice" id="planPrice" text="PRICE: 80€"
+               GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="standardGymDescription" id="planDescription" text="Good for beginners"
+               GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <GridPane fx:id="standardGymPlanInside" id="planInside" hgap="10" vgap="15" alignment="TOP_CENTER"
+                  GridPane.rowIndex="3" GridPane.columnIndex="0">
+            <padding>
+                <Insets top="25" bottom="25" left="30" right="30"/>
+            </padding>
+            <Label id="benefit" text="24/7 Gym access" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Use of lockers and shower" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Free weekly newsletter" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Button fx:id="standardGymPlanSelect" id="select" text="SELECT" onAction="#handleStandardGymPlanSelect"
+                    GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+        </GridPane>
+    </GridPane>
+    <GridPane fx:id="proGymPlan" id="Plan" hgap="10" vgap="10"
+              GridPane.rowIndex="0" GridPane.columnIndex="1">
+        <Label fx:id="proGymPlanTitle" id="planTitle" text="Pro Gym Plan"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="proGymPlanPrice" id="planPrice" text="PRICE: 110€"
+               GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="proGymDescription" id="planDescription" text="Best for those who take it seriously"
+               GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <GridPane fx:id="proGymPlanInside" id="planInside" hgap="10" vgap="15" alignment="TOP_CENTER"
+                  GridPane.rowIndex="3" GridPane.columnIndex="0">
+            <padding>
+                <Insets top="25" bottom="25" left="30" right="30"/>
+            </padding>
+            <Label id="benefit" text="24/7 Gym access" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Use of lockers and shower" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Free weekly newsletter" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Weekly entry to sauna" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="10% off on any product" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Button fx:id="proGymPlanSelect" id="select" text="SELECT" onAction="#handleProGymPlanSelect"
+                    GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+        </GridPane>
+    </GridPane>
+    <GridPane fx:id="vipGymPlan" id="Plan" hgap="10" vgap="10"
+              GridPane.rowIndex="0" GridPane.columnIndex="2">
+        <Label fx:id="vipGymPlanTitle" id="planTitle" text="VIP Gym Plan"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="vipGymPlanPrice" id="planPrice" text="PRICE: 185€"
+               GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="vipGymDescription" id="planDescription" text="Muscle soreness is your best friend"
+               GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <GridPane fx:id="vipGymPlanInside" id="planInside" hgap="10" vgap="15" alignment="TOP_CENTER"
+                  GridPane.rowIndex="3" GridPane.columnIndex="0">
+            <padding>
+                <Insets top="25" bottom="25" left="30" right="30"/>
+            </padding>
+            <Label id="benefit" text="24/7 Gym access" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Use of lockers and shower" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Free weekly newsletter" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Unlimited entries to sauna" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Monthly massage" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="15% off on any product" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Button fx:id="vipGymPlanSelect" id="select" text="SELECT" onAction="#handleVipGymPlanSelect"
+                    GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+        </GridPane>
+    </GridPane>
+    <GridPane fx:id="yogaPlan" id="Plan" hgap="10" vgap="10"
+              GridPane.rowIndex="1" GridPane.columnIndex="0">
+        <Label fx:id="yogaPlanTitle" id="planTitle" text="Yoga Standard Plan"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="yogaPlanPrice" id="planPrice" text="PRICE: 65€"
+               GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="yogaPlanDescription" id="planDescription" text="Inhale the future, exhale the past"
+               GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <GridPane fx:id="yohaPlanInside" id="planInside" hgap="10" vgap="15" alignment="TOP_CENTER"
+                  GridPane.rowIndex="3" GridPane.columnIndex="0">
+            <padding>
+                <Insets top="25" bottom="25" left="30" right="30"/>
+            </padding>
+            <Label id="benefit" text="3 sessions/week" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Use of lockers and shower" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Free weekly newsletter" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Button fx:id="yogaPlanSelect" id="select" text="SELECT" onAction="#handleYogaPlanSelect"
+                    GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+        </GridPane>
+    </GridPane>
+    <GridPane fx:id="crossFitPlan" id="Plan" hgap="10" vgap="10"
+              GridPane.rowIndex="1" GridPane.columnIndex="1">
+        <Label fx:id="crossFitPlanTitle" id="planTitle" text="CrossFit Standard Plan"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="crossFitPlanPrice" id="planPrice" text="PRICE: 80€"
+               GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="crossFitPlanDescription" id="planDescription" text="You're too cool for lifting"
+               GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <GridPane fx:id="crossFitPlanInside" id="planInside" hgap="10" vgap="15" alignment="TOP_CENTER"
+                  GridPane.rowIndex="3" GridPane.columnIndex="0">
+            <padding>
+                <Insets top="25" bottom="25" left="30" right="30"/>
+            </padding>
+            <Label id="benefit" text="4 sessions/week" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Use of lockers and shower" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Free weekly newsletter" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Weekly entry to sauna" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Button fx:id="crossFitPlanSelect" id="select" text="SELECT" onAction="#handleCrossFitPlanSelect"
+                    GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+        </GridPane>
+    </GridPane>
+    <GridPane fx:id="aerobicFitPlan" id="Plan" hgap="10" vgap="10"
+              GridPane.rowIndex="1" GridPane.columnIndex="2">
+        <Label fx:id="aerobicFitPlanTitle" id="planTitle" text="Aerobic Standard Plan"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <Label fx:id="aerobicFitPlanPrice" id="planPrice" text="PRICE: 115€"
+               GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label fx:id="aerobicFitPlanDescription" id="planDescription"
+               text="Human bodies are designed to be fit"
+               GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <GridPane fx:id="aerobicFitPlanInside" id="planInside" hgap="10" vgap="15" alignment="TOP_CENTER"
+                  GridPane.rowIndex="3" GridPane.columnIndex="0">
+            <padding>
+                <Insets top="25" bottom="25" left="30" right="30"/>
+            </padding>
+            <Label id="benefit" text="5 sessions/week" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Use of lockers and shower" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Free weekly newsletter" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Weekly entry to sauna" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label id="benefit" text="Monthly massage" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label id="emptyBenefit" text="###" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <Button fx:id="aerobicFitPlanSelect" id="select" text="SELECT" onAction="#handleAerobicFitPlanSelect"
+                    GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+        </GridPane>
+    </GridPane>
+    <Button fx:id="goBack" id="goBack" text="Go Back" onAction="#handleGoBack"
+            GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+</GridPane>
+
+
+

@@ -1,0 +1,176 @@
+/* Login Menu */
+#login {
+    -fx-background-color: linear-gradient(to bottom right, rgb(0, 128, 128), rgb(0, 180, 180));;
+    -fx-pref-width: 420;
+    -fx-pref-height: 1017;
+}
+
+#login_inside1 {
+    -fx-background-color: transparent;
+    -fx-pref-width: 360px;
+}
+
+#loginUsernamePassword {
+    -fx-pref-width: 318px;
+    -fx-pref-height: 40px;
+    -fx-background-color: white;
+    -fx-font-size: 20;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: black;
+}
+
+#loginRequest {
+    -fx-pref-width: 360px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 30px;
+    -fx-background-color: linear-gradient(to right, rgb(15, 15, 15), rgb(46, 46, 46));
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+    -fx-font-weight: BOLD;
+}
+
+#loginRequest:hover { -fx-background-color: black; }
+
+#forgotPasswordRequest {
+    -fx-background-color: transparent;
+    -fx-pref-width: 360px;
+    -fx-font-size: 14;
+    -fx-font-style: ITALIC;
+    -fx-font-weight: BOLD;
+}
+
+#forgotPasswordRequest:hover { -fx-underline: true; }
+
+#loginFail {
+    -fx-alignment: CENTER;
+    -fx-pref-width: 360px;
+    -fx-pref-height: 30px;
+    -fx-text-fill: white;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 16;
+    -fx-background-color: RED;
+    -fx-background-radius: 15px;
+}
+
+/* Register Menu */
+#register {
+    -fx-background-image: url("/register_background.jpg");
+    -fx-pref-width: 1500px;
+    -fx-pref-height: 1017px;
+}
+
+#registerInside {
+    -fx-background-color: white;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-width: 1px;
+    -fx-border-color: gray;
+}
+
+#registerLabel {
+    -fx-pref-width: 240px;
+    -fx-pref-height: 60px;
+    -fx-background-color: transparent;
+    -fx-font-size: 40;
+    -fx-padding: -10px 0px 0px 0px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180));
+}
+
+#personalInformationLabel, #accountInformationLabel, #securityQuestion {
+    -fx-pref-width: 240px;
+    -fx-background-color: transparent;
+    -fx-font-size: 23;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: linear-gradient(to right, rgb(255, 77, 0), rgb(255, 116, 0));
+}
+
+#personalInformationLabel {
+    -fx-pref-height: 40px;
+    -fx-padding: -10px 0px -10px 0px;
+}
+
+#accountInformationLabel, #securityQuestion {
+    -fx-pref-height: 50px;
+    -fx-padding: 0px 0px -10px 0px;
+}
+
+#fname, #lname, #password, #repassword, #answer {
+    -fx-pref-width: 240px;
+    -fx-pref-height: 35px;
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: rgb(140, 160, 175);
+    -fx-padding: 0px 0px 0px 5px;
+    -fx-font-size: 16;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: rgb(140, 160, 175);
+}
+
+#birthdate > .text-field {}
+
+#genderM, #genderF {
+    -fx-font-size: 15;
+    -fx-font-weight: BOLD;
+}
+
+#genderM, #genderF { -fx-text-fill: rgb(140, 160, 175); }
+
+#genderM:hover { -fx-text-fill: dodgerblue; }
+
+#genderF:hover { -fx-text-fill: deeppink; }
+
+#pin, #address, #email, #username {
+    -fx-pref-width: 500px;
+    -fx-pref-height: 35px;
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: rgb(140, 160, 175);
+    -fx-padding: 0px 0px 0px 5px;
+    -fx-font-size: 16;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: rgb(140, 160, 175);
+}
+
+#question {
+    -fx-pref-width: 240px;
+    -fx-pref-height: 35px;
+    -fx-font-size: 13.5;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: rgb(140, 160, 175);
+}
+
+#signup {
+    -fx-pref-width: 500px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 30px;
+    -fx-background-color: linear-gradient(to right, rgb(15, 15, 15), rgb(46, 46, 46));
+    -fx-text-fill: white;
+    -fx-font-size: 45;
+    -fx-font-weight: BOLD;
+}
+
+#signup:hover { -fx-background-color: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180)); }
+
+#clear {
+    -fx-background-color: transparent;
+    -fx-pref-width: 500px;
+    -fx-font-size: 16;
+    -fx-font-style: ITALIC;
+    -fx-font-weight: BOLD;
+    -fx-padding: -5px 0px -5px 0px;
+}
+
+#clear:hover { -fx-underline: true; }
+
+#accountCreated {
+    -fx-alignment: CENTER;
+    -fx-pref-width: 500px;
+    -fx-pref-height: 30px;
+    -fx-text-fill: white;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 16;
+    -fx-background-color: rgb(11,244,70);
+    -fx-background-radius: 15px;
+}

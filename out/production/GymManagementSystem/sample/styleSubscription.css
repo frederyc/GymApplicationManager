@@ -1,0 +1,70 @@
+#mainGrid {
+    -fx-background-image: url("/dashboard_background.jpg");
+}
+
+#Plan {
+    -fx-background-color: linear-gradient(to bottom right, rgb(0, 128, 128), rgb(0, 180, 180));
+    -fx-pref-width: 250px;
+    -fx-pref-height: 450px;
+}
+
+#planTitle, #planPrice, #planDescription {
+    -fx-alignment: CENTER;
+    -fx-pref-width: 250px;
+    -fx-text-fill: white;
+}
+
+#planTitle {
+    -fx-font-size: 22;
+    -fx-font-weight: BOLD;
+    -fx-pref-height: 45px;
+    -fx-padding: 0px 0px -10px 0px;
+}
+
+#planPrice {
+    -fx-font-size: 25;
+    -fx-font-weight: BOLD;
+}
+
+#planDescription { -fx-font-size: 15; }
+
+#planInside {
+    -fx-background-color: white;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 300px;
+}
+
+#benefit, #emptyBenefit {
+    -fx-alignment: CENTER;
+    -fx-pref-width: 190px;
+    -fx-pref-height: 25px;
+    -fx-font-size: 14;
+    -fx-font-weight: BOLD;
+}
+
+#emptyBenefit { -fx-text-fill: white; }
+
+#select {
+    -fx-pref-width: 190px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 15px;
+    -fx-background-color: black;
+    -fx-font-size: 23;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: white;
+}
+
+#select:hover { -fx-background-color: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180)); }
+
+#goBack {
+    -fx-pref-width: 250px;
+    -fx-text-fill: white;
+    -fx-font-weight: BOLD;
+    -fx-background-color: RED;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-border-color: RED;
+}
+
+#goBack:hover { -fx-background-color: transparent; }

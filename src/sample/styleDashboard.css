@@ -1,0 +1,55 @@
+#mainGrid {
+    -fx-background-color: rgb(33, 37, 43);
+    /*-fx-background-image: url("/dashboard_background.jpg");*/
+}
+
+#welcomeback {
+    -fx-pref-width: 1820px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 18;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: rgb(140, 160, 175);
+    -fx-padding: 0px 0px -10px 10px;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-color: rgb(140, 160, 175);;
+}
+
+.button {
+    -fx-pref-width: 573px;
+    -fx-pref-height: 200px;
+    -fx-text-fill: white;
+    -fx-font-size: 30;
+    -fx-font-weight: BOLD;
+    -fx-background-radius: 10px;
+}
+
+#activemembers { -fx-background-color: rgb(52, 122, 182); }
+#subscriptions { -fx-background-color: rgb(91, 184, 93); }
+#staffmembers { -fx-background-color: rgb(239, 173, 77); }
+#viewplans { -fx-background-color: rgb(0, 180, 180); }
+
+#activemembers:hover { -fx-background-color: rgb(37, 107, 167); }
+#subscriptions:hover { -fx-background-color: rgb(76, 169, 78); }
+#staffmembers:hover { -fx-background-color: rgb(224, 158, 62); }
+#viewplans:hover { -fx-background-color: rgb(0, 160, 160); }
+
+#activememberstable { -fx-pref-height: 600px; }
+
+#addmember, #deletemember, #renewsub, #logout {
+    -fx-pref-height: 50px;
+    -fx-font-size: 20;
+    -fx-background-color: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180));
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-border-color: linear-gradient(to right, rgb(0, 128, 128), rgb(0, 180, 180)) ;
+}
+
+#logout {
+    -fx-background-color: RED;
+    -fx-border-color: RED;
+}
+
+#addmember:hover, #deletemember:hover, #renewsub:hover, #logout:hover { -fx-background-color: transparent; }
+
+
+

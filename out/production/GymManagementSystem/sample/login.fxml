@@ -1,0 +1,98 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<GridPane fx:controller="sample.ControllerLogin" stylesheets="@styleLogin.css"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" vgap="10">
+    <GridPane id="login" GridPane.rowIndex="0" GridPane.columnIndex="0" hgap="10" vgap="10">
+        <padding>
+            <Insets top="150"/>
+        </padding>
+        <ImageView id="logo" GridPane.rowIndex="0" GridPane.columnIndex="0" fitWidth="420" fitHeight="256">
+            <Image url="@/logo.png"/>
+        </ImageView>
+        <GridPane id="login_inside1" alignment="CENTER" hgap="10" vgap="10"
+                  GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <padding>
+                <Insets top="40"/>
+            </padding>
+            <ImageView id="user_picture" GridPane.rowIndex="1" GridPane.columnIndex="0"
+                       fitWidth="32" fitHeight="32">
+                <Image url="@/user_icon_32x32.png"/>
+            </ImageView>
+            <TextField fx:id="usernameLogin" id="loginUsernamePassword" promptText="Username"
+                       GridPane.rowIndex="1" GridPane.columnIndex="1" />
+            <ImageView id="password_picture" GridPane.rowIndex="2" GridPane.columnIndex="0"
+                       fitWidth="32" fitHeight="32">
+                <Image url="@/password_icon_32x32.png"/>
+            </ImageView>
+            <PasswordField fx:id="passwordLogin" id="loginUsernamePassword" promptText="Password"
+                           GridPane.rowIndex="2" GridPane.columnIndex="1" />
+            <Button fx:id="loginRequest" id="loginRequest" text="LOGIN" onAction="#handleLoginRequest"
+                    GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+            <Button fx:id="forgotPasswordRequest" id="forgotPasswordRequest" text="Forgot Password?"
+                    onAction="#handleForgotPasswordRequest"
+                    GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+            <Label fx:id="loginFail" id="loginFail" text="Username or Password is incorrect" visible="false"
+                   GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+        </GridPane>
+    </GridPane>
+    <GridPane id="register" GridPane.rowIndex="0" GridPane.columnIndex="1" hgap="10" vgap="10">
+        <padding>
+            <Insets top="100" left ="150"/>
+        </padding>
+        <GridPane id="registerInside" GridPane.rowIndex="0" GridPane.columnIndex="0" hgap="20" vgap="10">
+            <padding>
+                <Insets top="30" bottom="10" left="30" right="30"/>
+            </padding>
+            <Label id="registerLabel" text="Register" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label id="personalInformationLabel" text="Personal Information"
+                   GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="fname" id="fname" promptText="First Name" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="lname" id="lname" promptText="Last Name" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <fx:define>
+                <ToggleGroup fx:id="genderToggleGroup"/>
+            </fx:define>
+            <RadioButton fx:id="genderM" text="Male"
+                         GridPane.rowIndex="3" GridPane.columnIndex="0" toggleGroup="$genderToggleGroup"/>
+            <RadioButton fx:id="genderF" text="Female"
+                         GridPane.rowIndex="3" GridPane.columnIndex="1" toggleGroup="$genderToggleGroup"/>
+            <TextField fx:id="pin" id="pin" promptText="PIN"
+                       GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+            <TextField fx:id="address" id="address" promptText="Address"
+                       GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+            <Label id="accountInformationLabel" text="Account Information"
+                   GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <TextField fx:id="email" id="email" promptText="Email Address"
+                       GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+            <TextField fx:id="username" id="username" promptText="Username"
+                       GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+            <PasswordField fx:id="password" id="password" promptText="Password"
+                           GridPane.rowIndex="9" GridPane.columnIndex="0"/>
+            <PasswordField fx:id="repassword" id="repassword" promptText="Confirm Password"
+                           GridPane.rowIndex="9" GridPane.columnIndex="1"/>
+            <Label id="securityQuestion" text="Security Question" GridPane.rowIndex="10" GridPane.columnIndex="0"/>
+            <Label id="question" text="What primary school did you attend?"
+                   GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+            <TextField fx:id="answer" id="answer" promptText="Answer" GridPane.rowIndex="11" GridPane.columnIndex="1"/>
+            <GridPane GridPane.rowIndex="12" GridPane.columnIndex="0" GridPane.columnSpan="2" vgap="10">
+                <padding>
+                    <Insets top="25"/>
+                </padding>
+                <Button fx:id="signup" id="signup" text="SIGN UP" onAction="#handleSignUp"
+                        GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <Button fx:id="clear" id="clear" text="Clear all fields"  onAction="#handleClear"
+                        GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <Label fx:id="accountCreated" id="accountCreated" text="Account created successfully!" visible="false"
+                       GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            </GridPane>
+        </GridPane>
+    </GridPane>
+</GridPane>
