@@ -16,5 +16,3 @@ the customers and their subscriptions.
 - [GitHub](https://github.com/)
 
 ## Screenshots
-
-![delete_job](https://user-images.githubusercontent.com/64581539/138961567-64d36897-8440-4fd6-bcce-ad608b6364a4.png)
